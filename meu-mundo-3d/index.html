@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Primeiro Mundo 3D</title>
+    
+    <link rel="stylesheet" href="style.css">
 
-     
-
-
-
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+            }
+        }
+    </script>
 </head>
-
 <body>
 
+    <header id="interface">
+        <div class="titulo">
+            <h1>Meu Primeiro Mundo 3D</h1>
+            <p>Explore o campo e descubra o ambiente!</p>
+        </div>
+        <div id="status">
+            Carregando mundo 3D...
+        </div>
+    </header>
 
+    <main id="jogo">
+        <div id="mensagem">
+            Preparando o mundo 3D...
+        </div>
+    </main>
 
+    <footer id="controles">
+        <div class="controle">
+            <strong>W A S D</strong>
+            <span>ou setas do teclado</span>
+        </div>
+        <div class="controle">
+            <strong>MOVIMENTAÇÃO</strong>
+            <span>Explore o campo</span>
+        </div>
+        <div class="controle">
+            <strong>CÂMERA</strong>
+            <span>Acompanha o personagem</span>
+        </div>
+    </footer>
 
-   
-
-
-
+    <script type="module" src="game.js"></script>
 
 </body>
-
 </html>
