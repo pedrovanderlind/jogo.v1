@@ -46,7 +46,7 @@ cena.fog = new THREE.Fog(
 
 const camera = new THREE.PerspectiveCamera(
 
-    60,
+    180,
 
     areaJogo.clientWidth / areaJogo.clientHeight,
 
